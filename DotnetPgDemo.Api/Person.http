@@ -1,0 +1,31 @@
+@base_address = http://localhost:5069/api/people
+
+POST {{base_address}}
+Content-Type: application/json
+
+ {
+   "FirstName": "Nayra",
+  "LastName": "Shaik"
+ }
+
+###
+GET {{base_address}}
+
+###
+GET {{base_address}}/4
+
+###
+
+PUT {{base_address}}/4
+Content-Type: application/json
+
+{
+  "Id":4,
+  "FirstName": "Nayra",
+  "LastName": "Shaik"
+}
+
+###
+
+DELETE {{base_address}}/4
+
